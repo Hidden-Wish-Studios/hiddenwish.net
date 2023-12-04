@@ -1,1 +1,1 @@
-# hiddenwish.github.io
+# hiddenwish.net
