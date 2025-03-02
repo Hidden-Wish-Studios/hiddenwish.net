@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hidden Wish Studios - Catalog</title>
 
     <link rel="icon" href="https://hiddenwish.net/files/favicon.png" type="image/x-icon">
@@ -9,7 +11,7 @@
         html, body {
             height: 100%;
             margin: 0;
-            padding: 0;
+            padding: 100px;
         }
         body {
             background-color: black;
@@ -22,6 +24,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .logo {
             width: auto;
             height: auto;
@@ -30,26 +33,44 @@
         p {
             font-size: 20px;
         }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            background-color: #006fe6;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #004ea1;
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="files/HiddenWish_Logo.png" alt="Hidden Wish Logo" class="logo">
-</header>
+    <header>
+        <img src="files/HiddenWish_Logo.png" alt="Hidden Wish Logo" class="logo">
+    </header>
 
-<main>
-    <div style="display: flex;">
-        <div style="flex: 1; margin-right: 50px;">
-			<p><iframe src="https://store.steampowered.com/widget/1763890/" frameborder="0" width="552" height="200"></iframe></p>
-            <p><iframe frameborder="0" src="https://itch.io/embed/2425792?bg_color=373737&amp;fg_color=ffffff&amp;link_color=a60000" width="552" height="167"><a href="https://hiddenwish.itch.io/hero-mode">Hero Mode by hiddenwish</a></iframe></p>
-			<p><iframe frameborder="0" src="https://itch.io/embed/2047662?bg_color=00587e&amp;fg_color=ffffff" width="552" height="167"><a href="https://hiddenwish.itch.io/chateau-grenouilles">Chateau Grenouilles by hiddenwish</a></iframe></p>
-			<p><iframe frameborder="0" src="https://itch.io/embed/2555939?bg_color=320000&amp;fg_color=ffffff" width="552" height="167"><a href="https://hiddenwish.itch.io/raidar">Raidar by hiddenwish</a></iframe></p>
+    <main>
+        <div style="display: flex;">
+            <div style="flex: 1;">
+                <p><iframe src="https://store.steampowered.com/widget/1763890/" frameborder="0" width="552" height="200"></iframe></p>
+                <p><iframe frameborder="0" src="https://itch.io/embed/2425792?bg_color=373737&amp;fg_color=ffffff&amp;link_color=a60000" width="552" height="167"><a href="https://hiddenwish.itch.io/hero-mode">Hero Mode by hiddenwish</a></iframe></p>
+                <p><iframe frameborder="0" src="https://itch.io/embed/2047662?bg_color=00587e&amp;fg_color=ffffff" width="552" height="167"><a href="https://hiddenwish.itch.io/chateau-grenouilles">Chateau Grenouilles by hiddenwish</a></iframe></p>
+                <p><iframe frameborder="0" src="https://itch.io/embed/2555939?bg_color=320000&amp;fg_color=ffffff" width="552" height="167"><a href="https://hiddenwish.itch.io/raidar">Raidar by hiddenwish</a></iframe></p>
+            </div>
         </div>
-    </div>
-	<p></p>
-	<a href="index.html">Back to the homepage</a>
-</main>
-
+        <p></p>
+        <a href="index.html" class="button">Back to the Home Page</a>
+        <br><br><br><br>
+    </main>
 </body>
 </html>
