@@ -3,12 +3,12 @@
 <head>
     <title>Hidden Wish Studios</title>
 
-    <meta name="description" content="Hidden Wish Studios  Home of Clone Clicker">
-    <meta name="keywords" content="Hidden Wish Studios, Clone Clicker, Game, Studio, Steam, Upcoming, 2024">
+    <meta name="description" content="Hidden Wish Studios - Indie Game Studio">
+    <meta name="keywords" content="Hidden Wish Studios, Game, Studio, Indie Games">
     <meta name="author" content="Hidden Wish Studios, Paul Merkamp, Alex McGrath">
 
     <meta property="og:title" content="Hidden Wish Studios">
-    <meta property="og:description" content="Hidden Wish Studios - Home of Clone Clicker">
+    <meta property="og:description" content="Hidden Wish Studios - Indie Game Studio">
     <meta property="og:image" content="https://hiddenwish.net/files/og.png">
     <meta property="og:url" content="https://hiddenwish.net">
     <meta property="og:type" content="website">
@@ -28,59 +28,61 @@
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
-            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
         }
         .logo {
-            width: auto;
+            width: 100%;
+            max-width: 400px;
             height: auto;
+            margin-bottom: 40px;
+        }
+        .game-widget {
             margin-bottom: 30px;
         }
-        p {
-            font-size: 20px;
+        .discord-logo {
+            width: 80px;
+            height: 80px;
+            margin-top: 20px;
+            transition: opacity 0.3s;
         }
-
-        .button {
-            display: inline-block;
-            padding: 12px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            font-family: Arial, sans-serif;
-            color: #ffffff;
-            background-color: #006fe6;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #004ea1;
+        .discord-logo:hover {
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="files/HiddenWish_Logo.png" alt="Hidden Wish Logo" class="logo">
-</header>
+<div class="container">
+    <header>
+        <img src="files/HiddenWish_Logo.png" alt="Hidden Wish Logo" class="logo">
+    </header>
 
-<main>
-    <div style="display: flex;">
-        <div style="flex: 1; margin-right: 50px;">
-			<p><iframe src="https://store.steampowered.com/widget/1763890/" frameborder="0" width="552" height="200"></iframe></p>
-            <p><iframe frameborder="0" src="https://itch.io/embed/2425792?bg_color=373737&amp;fg_color=ffffff&amp;link_color=a60000" width="552" height="167"><a href="https://hiddenwish.itch.io/hero-mode">Hero Mode by hiddenwish</a></iframe></p>
+    <main>
+        <div class="game-widget">
+            <iframe frameborder="0" src="https://itch.io/embed/4043374?bg_color=222222&amp;fg_color=eeeeee&amp;link_color=cc0909&amp;border_color=363636" width="552" height="167"><a href="https://hidden-wish.itch.io/hero-mode">Hero Mode by hidden-wish</a></iframe>
         </div>
-        <div style="flex: 1;">
-            <p><iframe src="https://discord.com/widget?id=1173494233450168352&theme=dark" width="350" height="375" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></p>
+
+        <div class="game-widget">
+            <iframe frameborder="0" src="https://itch.io/embed/4043363?bg_color=222222&amp;fg_color=eeeeee&amp;link_color=6e1214&amp;border_color=363636" width="552" height="167"><a href="https://hidden-wish.itch.io/raidar">Raidar by hidden-wish</a></iframe>
         </div>
-    </div>
-	<p></p>
-	<a href="catalog.html" class="button">Play Our Games</a>
-</main>
+
+        <div class="game-widget">
+            <iframe frameborder="0" src="https://itch.io/embed/4043369?bg_color=222222&amp;fg_color=eeeeee&amp;link_color=59dfe2&amp;border_color=363636" width="552" height="167"><a href="https://hidden-wish.itch.io/chateau-grenouilles">Chateau Grenouille by hidden-wish</a></iframe>
+        </div>
+
+        <a href="https://discord.gg/hppemHH5fR" target="_blank">
+            <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg" alt="Discord" class="discord-logo">
+        </a>
+    </main>
+</div>
 
 </body>
 </html>
